@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>LOGIN SIA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="login-wrapper">
+            <div class="login-side">
+                <a href="#" title="Logo">
+                    <img class="logo" src="assets/logo.png" alt="Logo">
+                </a>
+                <div class="my-form__wrapper">
+                    <div class="login-welcome-row">
+                        <h1>BIENBENIDO &#x1F44F;</h1>
+                        <p>SISTEMA INTEGRAL ACADÉMICO</p>
+                    </div>
+                    <form class="my-form"> 
+                        <div class="divider">
+                            <div class="divider-line"></div>
+                                         SIA
+                            <div class="divider-line"></div>
+                        </div>
+                        <div class="text-field">
+                            <label for="username">Usuario:</label>
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                placeholder="Tu Usuario"
+                                required
+                            >
+                            <img
+                                alt="Email Icon"
+                                title="Email Icon"
+                                src="assets/email.svg"
+                            >
+                        </div>
+                        <div class="text-field">
+                            <label for="password">Contraseña:</label>
+                            <input
+                                id="password"
+                                type="password"
+                                name="password"
+                                placeholder="Tu Contraseña"
+                                title="Minimum 6 characters at 
+                                    least 1 Alphabet, 1 Number and 1 Symbol"
+                                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{6,}$"
+                                required
+                            >
+                            <img
+                                alt="Password Icon"
+                                title="Password Icon"
+                                src="assets/password.svg"
+                            >
+                        </div>
+                        <input type="submit" class="my-form__button" value="Login">
+                        <div class="my-form__actions">
+                            <div class="my-form__row">
+                                <span>Olvidaste tu contraseña?</span>
+                                <a href="#" title="Reset Password">
+                                    Reiniciar contraseña
+                                </a>
+                            </div>
+                            <div class="my-form__signup">
+                                <a href="#" title="Create Account">
+                                    Crea una cuenta
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="info-side">
+                <img src="assets/MOCK.png" alt="Mock" class="mockup">
+                <div class="welcome-message">
+                    <h2>SISTEMA INTEGRAL ACADÉMICO 👋</h2>
+                    <p>
+                        Controla, gestiona y administra eficientemente la información académica 
+                        de tus estudiantes con nuestro sistema integral.
+                    </p>    
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
