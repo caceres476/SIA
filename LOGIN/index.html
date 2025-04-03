@@ -1,34 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"> <!-- Establece la codificación de caracteres como UTF-8 -->
         <title>LOGIN SIA</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Importación de fuentes desde Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
-            rel="stylesheet"
-        >
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+         <!-- Enlace al archivo CSS para los estilos de la página -->
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
+        <!-- Contenedor principal para el diseño del login -->
         <div class="login-wrapper">
+            
+            <!-- Sección izquierda del login -->
             <div class="login-side">
+                
+                <!-- Logo del sistema -->
                 <a href="#" title="Logo">
                     <img class="logo" src="assets/logo.png" alt="Logo">
                 </a>
+
+                <!-- Contenedor del formulario -->
                 <div class="my-form__wrapper">
+
+                    <!-- Mensaje de bienvenida -->
                     <div class="login-welcome-row">
-                        <h1>BIENBENIDO &#x1F44F;</h1>
+                        <h1>BIENVENIDO &#x1F44F;</h1> <!-- Emoji de aplausos -->
                         <p>SISTEMA INTEGRAL ACADÉMICO</p>
                     </div>
+
+                    <!-- Formulario de inicio de sesión -->
                     <form class="my-form"> 
+                        
+                        <!-- Separador decorativo con el texto "SIA" -->
                         <div class="divider">
                             <div class="divider-line"></div>
-                                         SIA
+                                SIA
                             <div class="divider-line"></div>
                         </div>
+
+                        <!-- Campo para ingresar el usuario -->
                         <div class="text-field">
                             <label for="username">Usuario:</label>
                             <input
@@ -36,14 +53,15 @@
                                 id="username"
                                 name="username"
                                 placeholder="Tu Usuario"
-                                required
+                                required    
                             >
-                            <img
-                                alt="Email Icon"
-                                title="Email Icon"
-                                src="assets/email.svg"
-                            >
+                            <!-- "required" Hace que este campo sea obligatorio -->
+
+                            <!-- Ícono de usuario -->
+                            <img alt="Email Icon" title="Email Icon" src="assets/email.svg">
                         </div>
+
+                        <!-- Campo para ingresar la contraseña -->
                         <div class="text-field">
                             <label for="password">Contraseña:</label>
                             <input
@@ -51,36 +69,42 @@
                                 type="password"
                                 name="password"
                                 placeholder="Tu Contraseña"
-                                title="Minimum 6 characters at 
-                                    least 1 Alphabet, 1 Number and 1 Symbol"
-                                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{6,}$"
+                                title="Minimum 6 characters at least 1 Alphabet, 1 Number and 1 Symbol"
+                                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{6,}$" 
                                 required
                             >
-                            <img
-                                alt="Password Icon"
-                                title="Password Icon"
-                                src="assets/password.svg"
-                            >
+                            <!-- Ícono de contraseña -->
+                            <img alt="Password Icon" title="Password Icon" src="assets/password.svg">
                         </div>
+
+                        <!-- Botón de envío del formulario -->
                         <input type="submit" class="my-form__button" value="Login">
+
+                        <!-- Enlaces de acciones adicionales -->
                         <div class="my-form__actions">
+                            
+                            <!-- Opción para recuperar contraseña -->
                             <div class="my-form__row">
                                 <span>Olvidaste tu contraseña?</span>
-                                <a href="#" title="Reset Password">
-                                    Reiniciar contraseña
-                                </a>
+                                <a href="#" title="Reset Password">Reiniciar contraseña</a>
                             </div>
+
+                            <!-- Opción para crear una nueva cuenta -->
                             <div class="my-form__signup">
-                                <a href="#" title="Create Account">
-                                    Crea una cuenta
-                                </a>
+                                <a href="#" title="Create Account">Crea una cuenta</a>
                             </div>
+
                         </div>
+
                     </form>
                 </div>
             </div>
+
+            <!-- Sección informativa a la derecha del formulario -->
             <div class="info-side">
                 <img src="assets/MOCK.png" alt="Mock" class="mockup">
+                
+                <!-- Mensaje sobre el sistema -->
                 <div class="welcome-message">
                     <h2>SISTEMA INTEGRAL ACADÉMICO 👋</h2>
                     <p>
@@ -90,7 +114,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Inclusión del archivo de JavaScript -->
         <script src="script.js"></script>
     </body>
 </html>
-
